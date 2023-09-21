@@ -18,8 +18,8 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Build
-        run: |
-          ./build/build-with-docker.sh
+        working-directory: build
+        run: build-with-docker.sh
       - uses: actions/upload-artifact@v3
         with:
           name: wasm-package
