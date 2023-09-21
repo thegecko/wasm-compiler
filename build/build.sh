@@ -11,6 +11,4 @@ SRC=$(realpath "$SRC")
 BUILD=$(realpath "$BUILD")
 
 $SRC/build-tooling.sh "$BUILD"
-
-$SRC/build-busybox.sh "$BUILD" "$BUSYBOX_SRC"
 $SRC/build-llvm.sh "$BUILD" "$LLVM_SRC"
